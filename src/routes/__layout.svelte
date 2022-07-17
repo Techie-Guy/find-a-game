@@ -3,5 +3,7 @@
     import SideBar from "../components/SideBar.svelte";
 </script>
 
-<SideBar/>
-<slot class="text-center"></slot>
+<div class="flex flex-col items-center">
+    <SideBar/>
+    <slot></slot>
+</div>

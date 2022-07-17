@@ -1,22 +1,25 @@
 <script>
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
 
-    export let icon;
-    export let text = 'tooltip';
+    export let icon = "";
+    export let link = "";
+    export let text = "tooltip";
     export let classes = "";
 
-    if(classes != "")
-    {
+    if (classes != "") {
         onMount(() => {
-            let icons = document.getElementsByClassName('sidebar-icon');
-            icons[5].classList.add(classes);
+            let icon = document.querySelectorAll(".sidebar-icon")[5];
+            let classlist = classes.split(" ");
+            classlist.forEach((classe) => {
+                icon.classList.add(classe);
+            });
         });
     }
 </script>
 
-<div class="sidebar-icon group">
-    <img src={icon} alt="" class="w-10 text-center">
+<a href={link} class="sidebar-icon group">
+    <img src={icon} alt="" class="w-10 text-center" />
     <span class="sidebar-tooltip group-hover:scale-100">
         {text}
     </span>
-</div>
+</a>

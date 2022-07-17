@@ -32,6 +32,6 @@ fs.readFile('./games.json', 'utf8', (error, data) => {
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server started on port localhost:${PORT}`);
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server started on port localhost:${process.env.PORT || PORT}`);
 });

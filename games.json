@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Minecraft",
+        "id": "minecraft",
+        "price": 30,
+        "where_to_get": [
+            "minecraft.net"
+        ],
+        "age_rating": "Anyone Can Play"
+    },
+    {
+        "name": "Roblox",
+        "id": "roblox",
+        "price": 0,
+        "where_to_get": [
+            "roblox.com"
+        ],
+        "age_rating": "Anyone Can Play"
+    }
+]

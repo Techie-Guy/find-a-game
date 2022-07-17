@@ -1,0 +1,15 @@
+{
+  "name": "findagameapi",
+  "version": "1.0.0",
+  "description": "The Backend API of findagame",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
